@@ -161,17 +161,45 @@
   transform: scale(1);
 }
 
-.col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-      background-image: url('../imgs/news2.png');
+#My_Sidenav .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+      background-image: url('../imgs/pucpr.png');
+}
+#Game_Sidenav .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../imgs/working2.gif');
+}
+#Proj_Sidenav .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../imgs/working2.gif');
 }
 
-.col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-      background-image: url('../imgs/news2.png');
-}
 
-.col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-      background-image: url('../imgs/news2.png');
+#My_Sidenav .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../imgs/devorawhite.png');
 }
+#Game_Sidenav .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+background-image: url('../imgs/devorawhite.png');
+}
+#Proj_Sidenav .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+background-image: url('../imgs/DevSuperior.png');
+}
+/* .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+      background-image: url('../imgs/news2.png');
+} */
+
+#My_Sidenav .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../imgs/cleanarch.png');
+}
+#My_Sidenav .col:nth-of-type(3) .card-container:nth-of-type(1) .card h4{
+  content: "Curso CleanArch";
+}
+#Game_Sidenav .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+background-image: url('../imgs/working2.gif');
+}
+#Proj_Sidenav .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+background-image: url('../imgs/working2.gif');
+}
+/* .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+      background-image: url('../imgs/news3.png');
+} */
 
 .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
       background-image: url('../imgs/news2.png');

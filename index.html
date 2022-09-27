@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/ArthurPallu.css">
-    <link rel="stylesheet" href="styles/InfoCards.css">
+    <link rel="stylesheet" href="styles/SideNavCards.css">
     <link rel="stylesheet" href="styles/SlideShow.css">
     <link rel="stylesheet" href="styles/SideNavGames.css">
 
@@ -229,10 +229,62 @@
 
 
                 </div>
+
+                </div>
                 <div id="My_Sidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav('My_Sidenav')">&times;</a>
-                    
+
                     <div class="game-container">
+
+                        
+                        <section id="My_Info">
+                            <div id="PucprInfo" class="infocard" >
+                                <div class="infocontainer">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeInfo('PucprInfo')">&times;</a>
+                                    <div class="info">
+                                        <h2>123456789</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        
+                        <div class="col">
+                    
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card"  onclick="openInfo('PucprInfo')">
+                                <h4>Universidade - PUCPR</h4>
+                            <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                            <h4></h4>
+                            <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                            <h4></h4>
+                            <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+                        
+                        </div>
                         
                         <div class="col">
                     
@@ -242,44 +294,7 @@
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Juno Solves 39-Year Old Mystery of Jupiter Lightning</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Engineers Solve Excessive Heat Removal from NASA’s Webb Telescope</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>NASA Finds Ancient Organic Material, Mysterious Methane on Mars</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>NASA to Host Live Discussion on New Mars Science Results</h4>
+                            <h4>Devora Sutdios</h4>
                             <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
@@ -316,7 +331,7 @@
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Astronauts Safely in Orbit Following Launch to International Space Station</h4>
+                            <h4>Curso CleanArchitecture</h4>
                             <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
@@ -344,7 +359,7 @@
                         </div> 
                         
                         </div>
-                        
+  
                     </div>
 
 
@@ -470,6 +485,8 @@
 
                 </div>
                 
+
+
                 <section id="navbuttons">
                     <!-- Use any element to open the sidenav -->
                     <div class="btncontainer">
@@ -500,6 +517,7 @@
 
 
         </main>
+        <script src="Javascript/InfoCard.js"></script>
         <script src="Javascript/SlideShow.js"></script>
         <script src="Javascript/SideNav.js"></script>
         <script>
