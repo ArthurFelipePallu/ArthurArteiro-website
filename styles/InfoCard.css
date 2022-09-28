@@ -3,18 +3,18 @@
   display: flex;
 }
 
-/* The side navigation menu */
+/*------------------ The side navigation menu ------------------------------*/
 .infocard {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 500; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
+    z-index: 200; /* Stay on top */
+    top: 200; /* Stay at the top */
+    left: 200;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    background-color: rgba(8, 6, 108, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   /* The navigation menu links */
@@ -35,7 +35,7 @@
   }
 
   /* Position and style the close button (top right corner) */
-  .infocard  .closebtn {
+  .infocard  .closebtn  {
     opacity: 1.0;
     position: absolute;
     top: 0;

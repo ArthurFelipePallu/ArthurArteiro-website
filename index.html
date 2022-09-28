@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,527 +9,556 @@
     <link rel="stylesheet" href="styles/SideNavCards.css">
     <link rel="stylesheet" href="styles/SlideShow.css">
     <link rel="stylesheet" href="styles/SideNavGames.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/ebb5efcf4e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-    <body>
-        <header>
-<!-- -------------------------------------    Inicio Header    ----------------------------------------- -->
 
-            <div id="logo">
-                <img src="imgs/devorawhite.png">
+<body>
+    <header>
+        <!-- -------------------------------------    Inicio Header    ----------------------------------------- -->
+
+        <div id="logo">
+            <img src="imgs/devorawhite.png">
+        </div>
+        <ul>
+            <li id="git">
+                <a target="_blank" href="https://github.com/ArthurFelipePallu">
+                    <div class="header__contact"></div>
+                    Git
+                </a>
+            </li>
+            <li id="mail">
+                <a target="_blank" href="mailto:arthurfelipepallu@gmail.com">
+                    <div class="header__contact"> </div>
+                    Email
+                </a>
+            </li>
+            <li id="whats">
+                <a target="_blank" href="https://wa.me/41998177573">
+                    <div class="header__contact"></div>
+                    Whats
+                </a>
+            </li>
+        </ul>
+        <!-- -------------------------------------    Fim Header    ----------------------------------------- -->
+
+    </header>
+    <main>
+
+
+        <!-- -------------------------------------    Início Apresentação    ----------------------------------------- -->
+
+        <section id="container">
+            <div class="name">
+                <h1>Arthur Felipe Pallu</h1>
+                <h5>App/Game Dev</h5>
             </div>
-            <ul>
-                <li id="git" >
-                    <a target="_blank" href="https://github.com/ArthurFelipePallu">
-                    <div class="header__contact" ></div>                
-                    Git</a>    
-                </li>
-                <li id="mail" >
-                    <a target="_blank" href="mailto:arthurfelipepallu@gmail.com">
-                    <div class="header__contact"> </div>  
-                    Email</a>
-                </li>
-                <li id="whats" >
-                    <a target="_blank" href="https://wa.me/41998177573">
-                    <div class="header__contact"></div>  
-                    Whats</a>
-                </li>
-            </ul>
-<!-- -------------------------------------    Fim Header    ----------------------------------------- -->
-
-        </header>
-        <main>
-
-
-<!-- -------------------------------------    Início Apresentação    ----------------------------------------- -->
-
-            <section id="container">
-                <div class="name">
-                    <h1>Arthur Felipe Pallu</h1>
-                    <h5>App/Game Dev</h5>
-                </div>
-                <div onclick="displayAbout()" id="arrow">
-                    <i id="arrowanimation" class="fa-solid fa-circle-down"></i>
-                </div>
-                <div style="display: none;" id="about">
-                    <p>um texto sobre mim me descrevendo e tals, ele descreve a minha pessoa apresentando os pontos principais <br/> 
-                        além de algumas conquistas e personalidade, no momento estou apenas nchendo linguiça</p>
-                </div>
-            </section>
-            <br><br>
-<!-- -------------------------------------    Fim Apresentação    ----------------------------------------- -->
-
-<!-- -------------------------------------    Início Slider      ------------------------------------ -->
-
-            <!-- Slideshow container -->
-                <div class="slideshow-container">
-                
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                            <img src="imgs/news1.jpg" style="width:100%;max-height: 400px;">
-                        <div class="text">
-                            <h2>Hiring Coders #3</h2>
-                            <h5>O terceiro ciclo da hiring coders iniciou , veja</h5>
-                        </div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                            <img src="imgs/news3.jpeg" style="width:100%;max-height: 400px;">
-                            <div class="text">
-                                <h2>Evento Java</h2>
-                                <h5>09/05 - 15/05 evento fechado para produzir um projeto Java</h5>
-                            </div>                    
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                            <img src="imgs/news2.png" style="width:100%;max-height: 400px;">
-                            <div class="text">
-                                <h2>Hiring Coders #3</h2>
-                                <h5>O terceiro ciclo da hiring coders iniciou , veja</h5>
-                            </div>                    
-                    </div>
-                </div>
-            <br>
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="arrowanimation" class="fa-solid fa-circle-down"></i>
             </div>
-<!-- ---------------------------    Fim Slider                 ------------------------------ -->
-<br><br><br>
-<!-- ---------------------------    Inicio Infos                 ------------------------------ -->
+            <div style="display: none;" id="about">
+                <p>um texto sobre mim me descrevendo e tals, ele descreve a minha pessoa apresentando os pontos
+                    principais <br />
+                    além de algumas conquistas e personalidade, no momento estou apenas nchendo linguiça</p>
+            </div>
+        </section>
+        <br><br>
+        <!-- -------------------------------------    Fim Apresentação    ----------------------------------------- -->
 
-            <section id="study">
-                <div id="Game_Sidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Game_Sidenav')">&times;</a>
-                    
-                    <div class="game-container">
-                        
-                        <div class="col">
-                    
+        <!-- -------------------------------------    Início Slider      ------------------------------------ -->
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="imgs/news1.jpg" style="width:100%;max-height: 400px;">
+                <div class="text">
+                    <h2>Hiring Coders #3</h2>
+                    <h5>O terceiro ciclo da hiring coders iniciou , veja</h5>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="imgs/news3.jpeg" style="width:100%;max-height: 400px;">
+                <div class="text">
+                    <h2>Evento Java</h2>
+                    <h5>09/05 - 15/05 evento fechado para produzir um projeto Java</h5>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="imgs/news2.png" style="width:100%;max-height: 400px;">
+                <div class="text">
+                    <h2>Hiring Coders #3</h2>
+                    <h5>O terceiro ciclo da hiring coders iniciou , veja</h5>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- ---------------------------    Fim Slider                 ------------------------------ -->
+        <br><br><br>
+        <!-- ---------------------------    Inicio Infos                 ------------------------------ -->
+
+        <section id="study">
+            <div id="Game_Sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Game_Sidenav')">&times;</a>
+
+                <div class="game-container">
+
+                    <div class="col">
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Juno Solves 39-Year Old Mystery of Jupiter Lightning</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>Juno Solves 39-Year Old Mystery of Jupiter Lightning</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Engineers Solve Excessive Heat Removal from NASA’s Webb Telescope</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>Engineers Solve Excessive Heat Removal from NASA’s Webb Telescope</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>NASA Finds Ancient Organic Material, Mysterious Methane on Mars</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>NASA Finds Ancient Organic Material, Mysterious Methane on Mars</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>NASA to Host Live Discussion on New Mars Science Results</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>20 Years of Earth Data Now at Your Fingertips</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Astronauts Safely in Orbit Following Launch to International Space Station</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div> 
-                        
-                        </div>
-                        
+
                     </div>
 
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>NASA to Host Live Discussion on New Mars Science Results</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>20 Years of Earth Data Now at Your Fingertips</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Astronauts Safely in Orbit Following Launch to International Space Station</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa
+                                </h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
-                </div>
-                <div id="My_Sidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('My_Sidenav')">&times;</a>
 
-                    <div class="game-container">
+            </div>
 
-                        
+            </div>
+            <div id="My_Sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('My_Sidenav')">&times;</a>
+
+                <div class="game-container">
+
+                    <!--                         
                         <section id="My_Info">
                             <div id="PucprInfo" class="infocard" >
                                 <div class="infocontainer">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeInfo('PucprInfo')">&times;</a>
-                                    <div class="info">
-                                        <h2>123456789</h2>
-                                    </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> -->
+                    <!-- Trigger/Open The Modal 
+                    <button id="myBtn">Open Modal</button>
+                    -->
 
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Modal Header</h2>
+                            </div>
+                            <div class="modal-body">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                            </div>
+                            <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                            </div>
+                        </div>         
+                        <!-- Modal content -->         
+                    </div>
+                    <!-- The Modal -->
+
+
+                    <div class="col">
+
+                        <div class="card-container" id="myBtn">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
-                            <div class="card"  onclick="openInfo('PucprInfo')">
+                            <div class="card" >
                                 <h4>Universidade - PUCPR</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4></h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4></h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4></h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4></h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Devora Sutdios</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>20 Years of Earth Data Now at Your Fingertips</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Curso CleanArchitecture</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div> 
-                        
-                        </div>
-  
+
                     </div>
 
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Devora Sutdios</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>20 Years of Earth Data Now at Your Fingertips</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Curso CleanArchitecture</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa
+                                </h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div id="Proj_Sidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Proj_Sidenav')">&times;</a>
-                    
-                    <div class="game-container">
-                        
-                        <div class="col">
-                    
+
+
+            </div>
+            <div id="Proj_Sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Proj_Sidenav')">&times;</a>
+
+                <div class="game-container">
+
+                    <div class="col">
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Juno Solves 39-Year Old Mystery of Jupiter Lightning</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>Juno Solves 39-Year Old Mystery of Jupiter Lightning</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>Engineers Solve Excessive Heat Removal from NASA’s Webb Telescope</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>Engineers Solve Excessive Heat Removal from NASA’s Webb Telescope</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
+
                         <div class="card-container">
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="overlay"></div>
                             <div class="card">
-                            <h4>NASA Finds Ancient Organic Material, Mysterious Methane on Mars</h4>
-                            <span class"chev">&rsaquo;</span>
+                                <h4>NASA Finds Ancient Organic Material, Mysterious Methane on Mars</h4>
+                                <span class"chev">&rsaquo;</span>
                             </div>
                         </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>NASA to Host Live Discussion on New Mars Science Results</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>20 Years of Earth Data Now at Your Fingertips</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        
-                        <div class="col">
-                    
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Astronauts Safely in Orbit Following Launch to International Space Station</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-container">
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="overlay"></div>
-                            <div class="card">
-                            <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa</h4>
-                            <span class"chev">&rsaquo;</span>
-                            </div>
-                        </div> 
-                        
-                        </div>
-                        
+
                     </div>
 
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>NASA to Host Live Discussion on New Mars Science Results</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>20 Years of Earth Data Now at Your Fingertips</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Astronomers Spot a Distant and Lonely Neutron Star</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Astronauts Safely in Orbit Following Launch to International Space Station</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>As Solar Wind Blows, Our Heliosphere Balloons</h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="overlay"></div>
+                            <div class="card">
+                                <h4>Tiny Asteroid Discovered Saturday Disintegrates Hours Later Over Southern Africa
+                                </h4>
+                                <span class"chev">&rsaquo;</span>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-                
 
 
-                <section id="navbuttons">
-                    <!-- Use any element to open the sidenav -->
-                    <div class="btncontainer">
-                        <div class="openbtn chess">
-                            <img src="imgs/chess.png" onclick="openNav('Game_Sidenav')"></img>
-                        </div>
-                        <span>Meus Jogos</span>
-                    </div>
-                    <div class="btncontainer">   
-                        <div class="openbtn book">
-                            <img src="imgs/bookwriting.gif" onclick="openNav('My_Sidenav')"></img>
-                        </div>
-                        <span>Sobre Mim</span>
-                    </div>
-                    <div class="btncontainer">
-                        <div class="openbtn hud">
-                            <img src="imgs/hud.png" onclick="openNav('Proj_Sidenav')"></img>
-                        </div>
-                        <span>Outros Projetos</span>
-                    </div>
-                </section>
-                 
+            </div>
 
+
+
+            <section id="navbuttons">
+                <!-- Use any element to open the sidenav -->
+                <div class="btncontainer">
+                    <div class="openbtn chess">
+                        <img src="imgs/chess.png" onclick="openNav('Game_Sidenav')"></img>
+                    </div>
+                    <span>Meus Jogos</span>
+                </div>
+                <div class="btncontainer">
+                    <div class="openbtn book">
+                        <img src="imgs/bookwriting.gif" onclick="openNav('My_Sidenav')"></img>
+                    </div>
+                    <span>Sobre Mim</span>
+                </div>
+                <div class="btncontainer">
+                    <div class="openbtn hud">
+                        <img src="imgs/hud.png" onclick="openNav('Proj_Sidenav')"></img>
+                    </div>
+                    <span>Outros Projetos</span>
+                </div>
             </section>
-<!-- ---------------------------    Fim Infos                 ------------------------------ -->
+
+
+        </section>
+        <!-- ---------------------------    Fim Infos                 ------------------------------ -->
 
 
 
 
-        </main>
-        <script src="Javascript/InfoCard.js"></script>
-        <script src="Javascript/SlideShow.js"></script>
-        <script src="Javascript/SideNav.js"></script>
-        <script>
-            
-            function displayAbout(){
-                var arrow = document.getElementById('arrowanimation');
-                arrow.classList.toggle('rotatearrow');
-                var displayabout = document.getElementById('about');
-                displayabout.classList.toggle('showabout');
-            }
-        </script>
-    </body>
+    </main>
+    <script src="Javascript/modal.js"></script>
+    <script src="Javascript/SlideShow.js"></script>
+    <script src="Javascript/SideNav.js"></script>
+    <script>
+
+        function displayAbout() {
+            var arrow = document.getElementById('arrowanimation');
+            arrow.classList.toggle('rotatearrow');
+            var displayabout = document.getElementById('about');
+            displayabout.classList.toggle('showabout');
+        }
+    </script>
+</body>
+
 </html>
-
